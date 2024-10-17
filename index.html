@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Odontológica Integral</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header con el nombre de la clínica -->
+  <header class="header">
+    <div>
+      <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+    <div class="header-title">
+      <h1>Clínica Odontológica Integral</h1>
+      <h2>Huertas - Díaz</h2>
+    </div>
+  </header>
+  <!-- pestañas flotantes -->
+  <div class="floating-buttons">
+    <button class="btn btn-primary">Llamada</button>
+    <button class="btn btn-secondary">Correo</button>
+  </div>
+
+  <!-- menú de navegación sticky -->
+  <nav class="navbar sticky">
+    <ul class="nav-menu">
+
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="nav-link">Servicios</a>
+        <ul class="dropdown-content">
+          <li><a href="#ortodoncia-ortopedia">Ortodoncia y Ortopedia</a></li>
+          <li><a href="#endodoncia">Endodoncia</a></li>
+          <li><a href="#odontopediatria">Odontopediatría</a></li>
+          <li><a href="#peiodoncia">Periodoncia e Implantología</a></li>
+          <li><a href="#rehabilitacion">Rehabilitación Oral</a></li>
+          <li><a href="#cirugia">Cirugía Oral</a></li>
+          <li><a href="#odontologiaa">Odontología General</a></li>
+          <li><a href="#armonizacion">Armonización Orofacial</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#pagos" class="nav-link">Pago</a>
+        <ul class="dropdown-content">
+          <li><a href="#tarjetacredito">Tarjeta de Crédito</a></li>
+          <li><a href="#tarjetadebito">Tarjeta Débito</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#redes" class="nav-link">Redes</a>
+        <ul class="dropdown-content">
+          <li><a href="#ipiales">Ipiales</a></li>
+          <li><a href="#pasto">Pasto</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#contacto" class="nav-link">Contáctenos</a>
+        <ul class="dropdown-content">
+          <li><a href="#telefono">Teléfono</a></li>
+          <li><a href="#email">Email</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#quienes-somos" class="nav-link">¿Quiénes somos?</a>
+        <ul class="dropdown-content">
+          <li><a href="#maria-cristina">María Cristina</a></li>
+          <li><a href="#myriam.stella">Myriam Stella</a></li>
+          <li><a href="#lady-sofia">Lady Sofía</a></li>
+          <li><a href="#daniel-andres">Daniel Andrés</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#plataforma" class="nav-link">Plataforma Estratégica</a>
+        <ul class="dropdown-content">
+          <li><a href="#misión">Misión</a></li>
+          <li><a href="#visión">Visión</a></li>
+          <li><a href="#principios-corporativos">Principios Corporativos</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#blog" class="nav-link">Blog</a>
+        <ul class="dropdown-content">
+          <li><a href="#consejos">Teléfono</a></li>
+          <li><a href="#videos">Email</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- secciones de la página -->
+  <section id="welcome" class="welcome">
+    <h1>Bienvenidos a nuestra Clínica</h1>
+    <p>Ofrecemos atención odontológica integral para toda la familia</p>
+  </section>
+
+  <!-- viv para las fotos -->
+  <section class="content-section">
+    <div class="images-container">
+      <img src="img/sonriza1.png" alt="Persona sonriendo" class="img-responsive">
+      <img src="img/sonriza2.png" alt="Persona sonriendo" class="img-responsive">
+    </div>
+
+    <!-- Formularios para agendar cita -->
+    <div class="form">
+      <section class="form-text">
+        <h2>Agende su cita</h2>
+        <h3>RED PASTO</h3>
+      </section>
+      <form id="appointment-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="date">Fecha de la cita:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Hora de la cita:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <button type="submit" class="btn-primary">Agendar</button>
+      </form>
+    </div>
+
+    
+
+  </section>
+<br><br>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div>
+      <h1>Empresarial</h1>
+      <p>lorem ipsum dolor</p>
+    </div>
+
+    <div class="left">
+      <h1>Contacto</h1>
+      <p>lorem ipsum dolor</p>
+    </div>
+
+    <p>Síguenos</p>
+
+    <div class="social-icons">
+      <a href="https://x.com" target="_blank" class="social-link">
+        <i class="fab fa-x"></i>
+      </a>
+      <a href="https://telegram.org" target="_blank" class="social-link">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://whatsapp.com" target="_blank" class="social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="social-link">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+   
+</body>
+</html>

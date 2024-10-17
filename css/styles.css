@@ -1,0 +1,310 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #004080;
+  }
+
+  .header h1, h2{
+    color: white;
+  }
+  
+  p {
+    color: #333;
+    text-align: center; /* Centramos el texto en esta sección */
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0073e6; /* Color diferente para el header */
+    padding: 20px;
+    color: white;
+  }
+
+  .header-title h1, h2{
+    margin-top: 30px;
+    font-size: 40px;
+    padding-left:100px;
+  }
+
+  .logo{
+    display: table-cell;
+    text-align: middle;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+    height: 200px;
+  }
+
+  .welcome h1{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #005bb5;
+    padding: 10px;
+  }
+
+  .welcome p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #005bb5;
+    padding: 10px;
+  }
+  
+  /* Sticky navbar */
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: #0073e6; /* Color diferente para el nav */
+    z-index: 1000;
+  }
+  
+  /*navbar */
+  .navbar {
+    background-color: #005bb5;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: skyblue; /*#0073e6*/
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0073e6;
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #005bb5;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Pestañas flotantes */
+  .floating-buttons {
+    position: fixed;
+    top: 59%;
+    right: 0; /* Mueve las pestañas al lado izquierdo */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .btn {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005bb5;
+  }
+  
+  .btn-secondary {
+    background-color: #00b3b3;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #008080;
+  }
+  
+  /* sections */
+   /* section-vision */
+
+   .platform h1{
+    margin-top: 30px;
+    color: blue;
+    font-size: 30px;
+   }
+    .mision {
+      color: blue;
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    .mision h1{
+      color: blue;
+    }
+
+    /* section-visión */
+    .vision {
+      color: blue;
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    .vision h1{
+      color: blue;
+    }
+  
+     /* sección-contenido */
+  .content-section {
+    display: flex;
+    
+    padding: 20px;
+    width: 80%;
+    color: blue;
+  }
+
+.content-text p{
+   color: blue;
+   font-size: 20px;
+}
+ /* sección. div imágenes y formulario */
+ .images-container {
+  width: 100%;
+}
+
+  section div{
+    position: relative;
+    margin-left: 20%;
+  }
+
+  .img-responsive {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+  .form {
+    background-color: #f0f0f055; /* Fondo gris claro */
+    /*padding: 20px;*/
+    border-radius: 10px; /* Bordes redondeados */
+    width: 60%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .form-text {
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .form-text h2 {
+    font-size: 2rem;
+    color: #0056b3; /* Color del texto */
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004080;
+  }
+  
+  #appointment-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #appointment-form button {
+    width: 90%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #appointment-form button:hover {
+    background-color: #005bb5;
+  }
+
+ /* Footer */
+.footer-content{
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+/* Footer p y h1*/
+.footer-content p, h1{
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/* icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  color: white;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover en íconos redes */
+.social-link:hover {
+  color: #0073e6; 
+}
