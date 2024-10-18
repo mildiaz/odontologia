@@ -62,7 +62,7 @@ body {
   .sticky {
     position: sticky;
     top: 0;
-    background-color: #0073e6; /* Color diferente para el nav */
+    background-color: #0073e6;
     z-index: 1000;
   }
   
